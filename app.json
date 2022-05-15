@@ -53,9 +53,6 @@
       "options": {
         "version": "14"
       }
-    },
-    {
-      "plan": "papertrail:choklad"
     }
   ]
 }
