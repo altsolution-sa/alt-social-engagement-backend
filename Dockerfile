@@ -15,6 +15,9 @@ RUN apk --update add --virtual build-dependencies python3 build-base && \
 	npm_config_user=root npm install -g n8n@${N8N_VERSION} && \
 	apk del build-dependencies
 
+# Install n8n-nodes-twitter-dynamic-auth module
+RUN cd /usr/local/lib/node_modules/n8n && npm install n8n-nodes-twitter-dynamic-auth
+
 # Specifying work directory
 WORKDIR /data
 
